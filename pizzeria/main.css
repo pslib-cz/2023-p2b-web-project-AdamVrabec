@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+ background-color: black;
+}
+.main{
+    color: white;
+}
+h1{
+    font-size: 96px;
+    font-family: "KoHo", serif;
+}
+h2{
+    font-size: 36px;
+    font-family: "KoHo", serif;
+    text-align: center;
+    margin-bottom: 0.5em;
+
+}
+h3{
+    color: red;
+}
+.info{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+
+}
+.info-more{
+
+}
+.ADRESA{
+    text-align: center;
+    margin: 5em;
+}
+.DOBA{
+    text-align: center;
+    margin: 5em;
+}
+.top-main{
+    margin-top: 0.5em;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%; 
+}
