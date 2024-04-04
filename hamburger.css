@@ -7,6 +7,9 @@ body {
     --color1: #FFF ;
     --color2: grey ;
 }
+ul.nav-bar{
+    padding: 0;
+}
 .nav-bar {
     width: 100%;
     margin: 0;
@@ -22,11 +25,13 @@ body {
     width: 120px;
     background : var(--color1);
     border-radius: 50%;
+    margin-left: 30px;
 
 }
 .menu {display: flex;}
 .menu li {padding-left: 30px;}
 .menu li a {
+    margin-right: 10px;
     display: inline-block;
     text-decoration: none;
     color: var(--color1);
@@ -47,6 +52,7 @@ body {
 }
 .menu li a:hover:after {width: 100%;}
 .open-menu , .close-menu {
+    margin-right: 5px;
     position: absolute;
     color: var(--color1);
     cursor: pointer;
@@ -55,12 +61,12 @@ body {
 }
 .open-menu {
     top: 50%;
-    right: 20px;
+    right: 15px;
     transform: translateY(-50%);
 }
 .close-menu {
     top: 20px;
-    right: 20px;
+    right: 30px;
 }
 #check {display: none;}
 @media(max-width: 610px){
