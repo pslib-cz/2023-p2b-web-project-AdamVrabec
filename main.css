@@ -1,0 +1,96 @@
+
+body{
+ background-color: black;
+ width: 100%;
+}
+.main{
+    color: white;
+}
+h1{
+    font-size: 96px;
+    font-family: "KoHo", serif;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    text-align: center;
+}
+h2{
+    font-size: 36px;
+    font-family: "KoHo", serif;
+    display: flex;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0;
+    margin-bottom: 10px;
+
+}
+p{
+    color: black;
+    font-weight: 1000;
+    margin: 0;
+}
+h3{
+    color: red;
+    margin-top: 0;
+}
+img{
+    
+}
+.main-img{
+margin-left: auto;
+margin-right: auto;
+width: 1200px;
+height: 600px;
+}
+.info{
+    width: 700px;
+    height: 200px;
+    display: flex;
+    margin: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    background-color: white;
+    border-radius: 30px;
+    
+
+}
+.info-more{
+    text-align: center;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+    
+}
+.ADRESA{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.DOBA{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.top-main{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%; 
+}
+@media(max-width: 610px){
+    .main-img{
+        width: 550px;
+        height: 350px;
+    }
+    .info{
+        width: 400px;
+        height: 150px;
+    }
+}
