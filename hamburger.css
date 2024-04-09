@@ -88,7 +88,7 @@ ul.nav-bar{
     .open-menu , .close-menu {display: block;}
     #check:checked ~ .menu {right: 0;}
     ul.nav-bar{
-        width: 610px;
+        width: 100%;
         padding: 0;
     }
     .logo img {
