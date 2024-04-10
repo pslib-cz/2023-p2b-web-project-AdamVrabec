@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./icons/style.css">
     <link rel="icon" type="image/svg" href="./icons/pizza_logo-removebg-preview.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
 </head>
+
 <body>
     <header>
         <nav>
@@ -30,32 +32,44 @@
         </nav>
     
     </header>
-    <div class=”galerie”>
-        <figure class="gallery__item gallery__item--2">
-          <img src="./images/Default_pizza_0.jpg" class="gallery__img" alt="Image 1">
-        </figure>
-        <figure class="gallery__item gallery__item--2">
-          <img src="./images/Default_pizza_1.jpg" class="gallery__img" alt="Image 2">
-        </figure>
-        <figure class="gallery__item gallery__item--3">
-          <img src="./images/Default_pizza_2.jpg" class="gallery__img" alt="Image 3">
-        </figure>
-        <figure class="gallery__item gallery__item--4">
-          <img src="./images/Default_pizza_3.jpg" class="gallery__img" alt="Image 4">
-        </figure>
-        <figure class="gallery__item gallery__item--5">
-          <img src="./images/Default_pizzeria_0.jpg" class="gallery__img" alt="Image 5">
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-          <img src="./images/Default_pizzeria_1.jpg" class="gallery__img" alt="Image 6">
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-            <img src="./images/Default_pizzeria_2.jpg" class="gallery__img" alt="Image 6">
-        </figure>
-        <figure class="gallery__item gallery__item--6">
-            <img src="./images/Default_pizzeria_3.jpg" class="gallery__img" alt="Image 6">
-        </figure>
-      </div>
+    <div class="galerie" id="lightgallery">
+      <a src="./images/Default_pizza_0.jpg">
+        <img class="galleryitem" src="./images/lowres/Default_pizza_0.jpg"alt="Pizza 1"/>
+      </a>
+      <a src="./images/Default_pizza_1.jpg">
+        <img class="galleryitem" src="./images/lowres/Default_pizza_1.jpg" alt="Pizza 2"/>
+      </a>
+      <a src="./images/Default_pizza_2.jpg">
+        <img class="galleryitem" src="./images/lowres/Default_pizza_2.jpg" alt="Pizza 3"/>
+      </a>
+      <a src="./images/Default_pizza_3.jpg">
+        <img class="galleryitem" src="./images/lowres/Default_pizza_3.jpg" alt="Pizza 4"/>
+      </a>
+      <a src="./images/Default_pizzeria_0.jpg">
+        <img class="galleryitem" src="./images/Default_pizzeria_0.jpg" alt="Pizzeria 1"/>
+      </a>
+      <a src="./images/Default_pizzeria_1.jpg">
+        <img class="galleryitem" src="./images/lowres/Default_pizzeria_1.jpg" alt="Pizzeria 2"/>
+      </a>
+      <a src="./images/Default_pizzeria_2.jpg">
+        <img class="galleryitem" src="./images/lowres/Default_pizzeria_2.jpg" alt="Pizzeria 3"/>
+      </a>
+    </div>
+    <script type="module">
+      import lightgallery from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/+esm";
+      import lgThumbnail from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/+esm";
+      import lgZoom from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/+esm";
+      import lgAutoplay from "https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/autoplay/+esm";
     
+      lightgallery(document.querySelector(".galerie"), {
+        selector: document.querySelectorAll(".galerie a"),
+        plugins: [lgThumbnail, lgZoom, lgAutoplay],
+        slideShowAutoplay: false,
+        slideShowInterval: 2000,
+        subHtmlSelectorRelative: false,
+        allowMediaOverlap: false,
+      });
+    </script>
 </body>
+
 </html>
