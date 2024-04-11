@@ -1,3 +1,12 @@
+#InstagramIcon{
+    background-image: url(../icons/instagram.svg);
+}
+#FacebookIcon{
+    background-image: url(../icons/facebook.svg);
+}
+#UserIcon{
+    background-image: url(../icons/user.svg);
+}
 ul.nav-bar{
     padding: 0;
 }
@@ -29,7 +38,6 @@ ul.nav-bar{
     text-align: center;
     transition: 0.15s ease-in-out;
     position: relative;
-    text-transform: uppercase;
 }
 .menu li a::after {
     content: "";
@@ -219,7 +227,7 @@ overflow: hidden;
 .nazev-pizza{
     font-size: 40px;
     width: fit-content;
-    height: 50px;
+    /*height: 100px;*/
     margin: 0;
     
 }
@@ -286,8 +294,7 @@ overflow: hidden;
 }
 
 .container{
-    max-width: 700px;
-    width: 100%;
+    max-width: 600px;
     margin: auto;
     margin-top: 10em;
     display: flex;
@@ -351,6 +358,12 @@ form .button input{
     background: white;
 }
 @media (max-width: 830px){
+    h1{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 40px;
+    }
     .pizza-container{
         display: grid;
         grid-template-columns: 1fr;
@@ -364,6 +377,7 @@ form .button input{
     }
     .pizza-even{
         margin: 10px auto 10px auto;
+        order: -1;
     }
     .popis-pizza-even{
         display: flex;
@@ -387,12 +401,32 @@ form .button input{
         border-radius: 50px;
         width: 60%;
     }
+    .info{
+        width: 300px;
+        height: 300px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .DOBA{
+        margin-top: 30px;
+    }
+    .ADRESA{
+        margin-bottom: 30px;
+    }
+    p{
+        font-size: 12px;
+    }
+    h3{
+        font-size: 15px;
+        font-weight: 1000;
+    }
         
         
 }
-@media (max-width: 584px){
+@media (max-width: 670px){
     .container{
-        max-width: 700px;
+        max-width: 500px;
+        margin: 10em 20px 0 20px;
     }
     form .user-details .input-box{
         margin-bottom: 15px;
@@ -416,28 +450,6 @@ form .button input{
         grid-template-columns: 1fr;
         gap: 40px;
         margin: 40px;
-    }
-    .info{
-        width: 300px;
-        height: 300px;
-        flex-direction: column;
-        align-items: center;
-    }
-    .DOBA{
-        margin-top: 30px;
-    }
-    .ADRESA{
-        margin-bottom: 30px;
-    }
-    p{
-        font-size: 12px;
-    }
-    h3{
-        font-size: 15px;
-        font-weight: 1000;
-    }
-    body{
-        width: 100%;
     }
 
 }
